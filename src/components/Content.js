@@ -1,9 +1,20 @@
-// this component conditionally renders the content on the page with the help of the Navigation.js component
+// this component conditionally renders the content on the page with the help of the Navigation.js component.
+    //navigation sets the value of currentPage with handlePageChange with the onClick attributes added
+    //to the links in the navbar. in this component, currentPage's value is checked with renderPage and the 
+    //corresponding content page is rendered.
 
 
 import React, {useState} from 'react';
 
 import Nav from './Navigation';
+
+//content pages imports
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+//content pages imports
+
 
 export default function Content() {
 
@@ -13,6 +24,15 @@ export default function Content() {
     const renderPage =() => { 
         if (currentPage === 'About') {
             return <About />
+        }
+        if (currentPage === 'Contact') {
+            return <Contact />
+        }
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />
+        }
+        if (currentPage === 'Resume') {
+            return <Resume />
         }
 
     }

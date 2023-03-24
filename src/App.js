@@ -29,6 +29,9 @@ export default function App(){
     )
 }
 
+//note: content component may have nav rendered into it already in order to pass the props.
+//if app has both the nav and content, there will be two navbars.
+
 
 
 
