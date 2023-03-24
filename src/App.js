@@ -4,12 +4,25 @@
 import React from 'react';
 
 import Footer from './components/Footer'; 
+import Header from './components/Header';
+import Content from './components/Content'; //renders navbar, which handles navigation, handles content display.
+
 
 export default function App() {
     return (
+        <div>
+            <div id="header"> {/* header renders the navbar inside it.*/}
+                <Header />
+            </div>
 
-        <div id="footer">
-            <Footer />
+            <div id="content">
+                <Content />
+
+            </div>
+
+            <div id="footer">
+                <Footer />
+            </div>
         </div>
     );
 }
