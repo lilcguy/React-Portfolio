@@ -19,8 +19,10 @@ export default function Navigation({currentPage, handlePageChange}) {
                 <a>Portfolio</a>
                 <a
                 href="#contact"
-                onClick={() => handlePage('Contact')}>Contact</a>
-                <a>Resume</a> 
+                onClick={() => handlePageChange('Contact')}>Contact</a>
+                <a
+                href="#resume"
+                onClick={() => handlePageChange('Resume')}>Resume</a> 
 
             </nav>
         </div>
