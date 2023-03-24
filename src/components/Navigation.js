@@ -17,7 +17,9 @@ export default function Navigation({currentPage, handlePageChange}) {
                 href="#about"
                 onClick={() => handlePageChange('About')}>About Me</a> {/* these will take onClick attributes to handle the page changing with a function*/}
                 <a>Portfolio</a>
-                <a>Contact</a>
+                <a
+                href="#contact"
+                onClick={() => handlePage('Contact')}>Contact</a>
                 <a>Resume</a> 
 
             </nav>

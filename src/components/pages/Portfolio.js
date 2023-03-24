@@ -6,6 +6,8 @@ import React from 'react';
 
 import Project from '../../components/Project';
 
+//add to this array of objects to add a new project to the portfolio. the project.js components maps over this
+// array to display each one.
 const projects = [
     {
         title: "5 Day Forecast",

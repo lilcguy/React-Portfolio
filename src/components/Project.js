@@ -29,4 +29,10 @@ export default function Project(props) {
 // https://lilcguy.github.io/5-Day-Weather-Forecast/ 
 // https://github.com/lilcguy 
 
-//map over props received, which will be an array of objects
+//map over props received, which will be an array of objects]
+
+/*
+
+item.image will eventually be <a href={item.image}>
+
+*/

@@ -8,12 +8,12 @@ import React, {useState} from 'react';
 
 import Nav from './Navigation';
 
-//content pages imports
+//content pages imports -v
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
-//content pages imports
+//content pages imports -^
 
 
 export default function Content() {

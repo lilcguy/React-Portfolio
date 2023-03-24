@@ -1,6 +1,8 @@
 // footer component.
 // does what it says on the tin: renders the footer component of the application.
 
+// styling can be done in this file if so desired. smile.
+
 import React from 'react';
 
 export default function Footer() { //exporting and declaration/initialization of the function Footer is all done in a single line here.
@@ -17,3 +19,4 @@ export default function Footer() { //exporting and declaration/initialization of
 
     );
 }
+
