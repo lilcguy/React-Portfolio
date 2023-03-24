@@ -11,11 +11,17 @@ import Project from '../../components/Project';
 const projects = [
     {
         title: "5 Day Forecast",
-        image: "PLACEHOLDER",
+        image: "PLACEHOLDER, MOVE TO HREF",
         deployLink: "https://lilcguy.github.io/5-Day-Weather-Forecast/",
         repoLink: "https://github.com/lilcguy"
 
     },
+    {
+        title: "placeholder2",
+        image: "PLACEHOLDER, MOVE TO HREF",
+        deployLink: "https://lilcguy.github.io/5-Day-Weather-Forecast/",
+        repoLink: "https://github.com/lilcguy"
+    }
 
 ]
 
