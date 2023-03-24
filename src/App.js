@@ -13,3 +13,26 @@ export default function App() {
         </div>
     );
 }
+
+
+
+
+/* 
+
+export default function App(){
+    return (
+
+        <Header />
+            <Nav /> <--- in theory this is where the rendering for below happens.
+                <content> <-- this is rendered based on Nav above.
+        <Footer />
+    )
+}
+
+
+
+
+
+
+
+*/

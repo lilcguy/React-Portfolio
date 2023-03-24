@@ -3,22 +3,12 @@
 // elements of the navbar, and highlight the navbar 
 // this component is exported to the Header component.
 
-import React, {useState} from 'react';
+import React from 'react';
 
-export default function Navigation() {
-    const [currentPage, setCurrentPage] = useState('About'); //about me serves as the landing page
+export default function Navigation({currentPage, handlePageChange}) {
 
-    const renderPage =(page) => { //this function handles navigation with conditional page rendering.
-        if (page === 'About') {
-            return <About />
-        }
-
-    }
-
-    function handlePageChange(page) {
-        setCurrentPage(page); //set the state of currentPage to param
-        renderPage(page); //run this function to check that and render the corresponding component.
-    }
+        //from Content.js component, takes the props currentPage variable value, and the function
+        //handlePageChange.
 
     return (
         <div className="navbar">
@@ -36,9 +26,11 @@ export default function Navigation() {
 }
 
 
+//probably obsolete comments below - why? because it's all being handled in this component.
 // this page handles setting the state of currentPage.
 // somewhere that will be taken in as a prop to conditionally render about, portfolio, etc.
 // export currentPage as a prop...
+
 
 //add ternnary conditions in the JSX for current page highlighting in tab.
     // in theory, just use the currentPage variable to check it.
