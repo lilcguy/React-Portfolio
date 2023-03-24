@@ -31,6 +31,7 @@ export default function App(){
 
 //note: content component may have nav rendered into it already in order to pass the props.
 //if app has both the nav and content, there will be two navbars.
+//note: <nav> is being rendered in Header component. in theory there will now be 3. remove from header.
 
 
 
