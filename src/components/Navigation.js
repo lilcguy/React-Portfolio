@@ -11,17 +11,22 @@ export default function Navigation({currentPage, handlePageChange}) {
         //handlePageChange.
 
     return (
-        <div className="navbar">
-            <nav>
+        <div className="navbar bg-info-subtle">
+            <nav className="nav nav-tabs">
                 <a
+                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
                 href="#about"
                 onClick={() => handlePageChange('About')}>About Me</a> {/* these will take onClick attributes to handle the page changing with a function*/}
-                <a href="#portfolio"
+                <a 
+                className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                href="#portfolio"
                 onClick={() => handlePageChange('Portfolio')}>Portfolio</a>
                 <a
+                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                 href="#contact"
                 onClick={() => handlePageChange('Contact')}>Contact</a>
                 <a
+                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
                 href="#resume"
                 onClick={() => handlePageChange('Resume')}>Resume</a> 
 

@@ -8,6 +8,8 @@ import Header from './components/Header';
 import Content from './components/Content'; //renders navbar, which handles navigation, handles content display.
 
 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 export default function App() {
     return (
         <div>
