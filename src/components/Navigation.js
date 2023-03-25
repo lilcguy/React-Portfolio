@@ -11,7 +11,7 @@ export default function Navigation({currentPage, handlePageChange}) {
         //handlePageChange.
 
     return (
-        <div className="navbar bg-info-subtle">
+        <div className="text-center navbar bg-info-subtle">
             <nav className="nav nav-tabs">
                 <a
                 className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}

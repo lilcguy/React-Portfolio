@@ -8,11 +8,17 @@ import React from 'react';
 export default function Footer() { //exporting and declaration/initialization of the function Footer is all done in a single line here.
 
     return (   
-        <div className="footer"> 
-        <footer>
-            <a href="https://github.com/lilcguy">GitHub</a> {/* maybe make this an icon for style points?*/}
-            <a href="">LinkedIn</a>
-            <a href="">Third platform</a> {/*ask a question about this. i dont have a twitter or stackOverflow. */}
+        <div id="footer" className="container-fluid bg-dark-subtle"> 
+        <footer className="nav">
+            <a 
+            className="nav-link"
+            href="https://github.com/lilcguy">GitHub</a> {/* maybe make this an icon for style points?*/}
+            <a 
+            className="nav-link"
+            href="">LinkedIn</a>
+            <a 
+            className="nav-link"
+            href="">Third platform</a> {/*ask a question about this. i dont have a twitter or stackOverflow. */}
         </footer>
 
         </div>

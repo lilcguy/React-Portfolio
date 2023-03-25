@@ -10,14 +10,14 @@ import React from 'react';
 
 export default function Project(props) {
 return (
-<div>
-    <ul>
+<div className="d-flex container grid">
+    <ul className=" d-flex flex-row gap-5 row ">
         {props.projects.map(item => (
-            <li>
+            <li className="d-flex card col gap-2 text-center ">
                 <h1>{item.title}</h1>
-                <h3>{item.image}</h3>
-                <h3>{item.deployLink}</h3>
-                <h3>{item.repoLink}</h3>
+                <img className="justify-content-center h-50 w-50" src={item.image}></img>
+                <a className="btn btn-primary" href={item.deployLink}>Deployed Application</a>
+                <a className="btn btn-primary" href={item.repoLink}>GitHub</a>
             </li>
         ))}
     </ul>
