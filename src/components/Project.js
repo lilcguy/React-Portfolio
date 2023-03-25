@@ -9,7 +9,7 @@ import React from 'react';
 
 
 export default function Project(props) {
-
+return (
 <div>
     <ul>
         {props.projects.map(item => (
@@ -23,7 +23,7 @@ export default function Project(props) {
     </ul>
 
 </div>
-
+);
 }
 
 // https://lilcguy.github.io/5-Day-Weather-Forecast/ 
@@ -33,6 +33,9 @@ export default function Project(props) {
 
 /*
 
-item.image will eventually be <a href={item.image}>
+item.image will eventually be <img src={item.image}>
 
+
+in project.js,
+make the links to the repo and deploys actual links, and make them 'Repo' and 'Deployed Application' links.
 */

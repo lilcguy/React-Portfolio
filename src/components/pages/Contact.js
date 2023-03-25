@@ -8,7 +8,7 @@ export default function Contact() {
             <h1>Contact Me!</h1>
             <textarea required>Your Name</textarea>
             <textarea required>Your Email</textarea>
-            <textaera required>Message</textaera>
+            <textarea required>Message</textarea>
 
         </div>
     )
