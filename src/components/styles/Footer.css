@@ -4,13 +4,15 @@
 
     width: 100%;
     background-color: #34435E;
-    flex-grow: 1;
-    height:150px;
-    position: absolute;
+    
+    height: 50px;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 
 }
 
-/* 977*/
+/* 977
+flex-grow: 1;
+*/
