@@ -16,6 +16,8 @@ import Resume from './pages/Resume';
 //content pages imports -^
 
 
+
+
 export default function Content() {
 
     const [currentPage, setCurrentPage] = useState('About'); //about me serves as the default landing page.

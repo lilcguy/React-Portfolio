@@ -29,3 +29,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.error {
+    visibility: visible;
+    color: red;
+}
+
+/* display: hidden; */
