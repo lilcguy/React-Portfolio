@@ -1,7 +1,9 @@
 /* potential styling for content body for keeping it consistent.*/
 
 .body {
-    height: 977px;
+    
     background-color: #D8D2E1;
+    position: absolute;
+
 
 }
