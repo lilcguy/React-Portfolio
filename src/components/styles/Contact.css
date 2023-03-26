@@ -1,0 +1,31 @@
+/* styling for the contact me page. sizing the forms.*/
+
+.h1 {
+    text-align: center;
+}
+
+.forms-parent {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.form {
+    display: block;
+    margin: 30px;
+    height: 80px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.msg-form {
+    height: 300px;
+    width: 500px;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
