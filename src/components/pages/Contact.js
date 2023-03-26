@@ -14,26 +14,21 @@ function Forms() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
-    const [focusValue, setFocusValue] = useState(false);
+    const [errorMessage, setErrorMessage] = useState(''); //for the email form
+    const [otherErrorMessage, setOtherErrorMessage] = useState('');
+
+    //const [focusValue, setFocusValue] = useState(false);
     //state for error message, because whether or not the validation comes back true or false, display an error message.
-        //give each form separate error message...
+   
 
 
 
         
-        //onBlur is also an attribute!!
-    /*
-        const nameForm = document.getElementById('name');
-
-        //console.log(nameForm);
-
-        nameForm.addEventListener("blur", (event) => {
-            if (event.target.value === '') {
-                setErrorMessage('All fields are required.');
-            }
-        });
-    */
+/* 
+tried onBlur attribute, tried event listener for 'blur' event,
+tried onFocus event.
+could not get either to work.
+*/
 
 
     function handleInputChange(e) {
@@ -46,6 +41,8 @@ function Forms() {
         //instead of notifying the user that their information is invalid on form submit, we will handle it here:
             //there is no functionality currently for form submission handling.
     
+            console.log("name:" + name);
+            console.log("msg: " + message);
     if (inputType === 'name') {
         setName(inputValue);
 
@@ -56,6 +53,15 @@ function Forms() {
         setMessage(inputValue);
     }
 
+    if (!name || !message) {
+        setOtherErrorMessage('All fields are required.');
+        console.log('check for name and message fields failed');
+        
+    } else {
+        setOtherErrorMessage('');
+        console.log('check for name/msg field passed');
+    }
+
         //this check runs with every single input change.
     if (!validateEmail(email)) { //if the email validation fails, i.e. false... 
         setErrorMessage("Email is invalid.");
@@ -63,8 +69,18 @@ function Forms() {
         return;
     } else {
         setErrorMessage('');
-        console.log('email checks out.')
+        console.log('email checks out.');
     }
+
+    /*
+    if (!name || !message) {
+        setOtherErrorMessage('All fields are required.');
+        console.log('check for name and message fields failed');
+    } else {
+        setOtherErrorMessage('');
+        console.log('check for name/msg field passed');
+    }
+    */
 
 
         
@@ -79,7 +95,7 @@ function Forms() {
             return;
         }
 
-        window.alert("Page is under development. This feature is not complete, but your submission would be successful.");
+        window.alert("This feature is under development. Please try again later.");
         //clear all forms on successful submission; i.e. validations cleared.
         setName('');
         setEmail('');
@@ -121,6 +137,11 @@ function Forms() {
                 <div>
                     <h3 
                     className="error">{errorMessage}
+                    </h3>
+                </div>
+                <div>
+                    <h3 
+                    className="error">{otherErrorMessage}
                     </h3>
                 </div>
 
