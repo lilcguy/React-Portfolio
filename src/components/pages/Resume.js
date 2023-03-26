@@ -2,10 +2,12 @@
 
 import React from 'react';
 
+import '../styles/Content-body.css';
+
 export default function Resume() {
     return (
-        <div>
-            <div className="proficiencies">
+        <div className="body">
+            <div >
                 <h1>Proficiencies</h1>
                 <ul>
                     <li>HTML</li>

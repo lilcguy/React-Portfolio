@@ -5,10 +5,12 @@
 
 import React from 'react';
 
+import '../components/styles/Footer.css';
+
 export default function Footer() { //exporting and declaration/initialization of the function Footer is all done in a single line here.
 
     return (   
-        <div id="footer" className="container-fluid bg-dark-subtle"> 
+        <div id="footer" className="footer"> 
         <footer className="nav">
             <a 
             className="nav-link"

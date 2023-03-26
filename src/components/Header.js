@@ -6,6 +6,8 @@
 
 import React from 'react';
 
+import '../components/styles/Header.css';
+
 function Header() {
     return (
     <div className="header">

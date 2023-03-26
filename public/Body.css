@@ -1,0 +1,7 @@
+/* proposed changes to body to have webpage respond to zoom better.*/
+
+.body {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh;
+}

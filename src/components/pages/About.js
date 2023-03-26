@@ -3,11 +3,11 @@
 
 import React from 'react';
 
-
+import '../styles/Content-body.css';
 
 export default function About() {
     return (
-     <div className="container-fluid">
+     <div className="body">
         <h1>About Page</h1>
         <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.

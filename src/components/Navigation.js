@@ -5,13 +5,15 @@
 
 import React from 'react';
 
+import '../components/styles/Navigation.css';
+
 export default function Navigation({currentPage, handlePageChange}) {
 
         //from Content.js component, takes the props currentPage variable value, and the function
         //handlePageChange.
 
     return (
-        <div className="text-center navbar bg-info-subtle">
+        <div className="nav-color">
             <nav className="nav nav-tabs">
                 <a
                 className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}

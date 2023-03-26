@@ -1,0 +1,14 @@
+/* styling for footer component.*/
+
+.footer {
+
+    width: 100%;
+    background-color: #34435E;
+    flex-grow: 1;
+    position: fixed;
+    height:150px;
+    position: absolute;
+
+}
+
+/* 977*/

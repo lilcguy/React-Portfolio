@@ -1,0 +1,26 @@
+/* CSS styling for the projects section of the portfolio.*/
+
+.card-parent {
+    display: flex;
+    background-color: #D8D2E1;
+    flex-wrap: wrap;
+}
+
+
+.card-me {
+    border-style: solid;
+    margin: 50px;
+    text-align: center;
+    background-color: #60E1E0;
+
+}
+
+.content-background {
+    background-color: #D8D2E1;
+    height:977px;
+}
+
+.img {
+    height: 300px;
+    width: 350px;
+}

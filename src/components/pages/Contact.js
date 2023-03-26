@@ -2,9 +2,11 @@
 
 import React from 'react';
 
+import '../styles/Content-body.css';
+
 export default function Contact() {
     return (
-        <div> 
+        <div className="body"> 
             <h1>Contact Me!</h1>
             <textarea required>Your Name</textarea>
             <textarea required>Your Email</textarea>

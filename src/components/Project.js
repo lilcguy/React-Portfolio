@@ -7,20 +7,26 @@
 
 import React from 'react';
 
+import '../components/styles/Project.css';
+
 
 export default function Project(props) {
 return (
-<div className="d-flex container grid">
-    <ul className=" d-flex flex-row gap-5 row ">
+<div className="content-background">
+    <div className="card-parent">
         {props.projects.map(item => (
-            <li className="d-flex card col gap-2 text-center ">
+            <div className="card-me">
                 <h1>{item.title}</h1>
-                <img className="justify-content-center h-50 w-50" src={item.image}></img>
-                <a className="btn btn-primary" href={item.deployLink}>Deployed Application</a>
-                <a className="btn btn-primary" href={item.repoLink}>GitHub</a>
-            </li>
+                <img className="img" src={item.image}></img>
+                <div>
+                    <a className="" href={item.deployLink}>Deployed Application</a>
+                    <div>
+                        <a className="" href={item.repoLink}>GitHub</a>
+                    </div>
+                </div>
+            </div>
         ))}
-    </ul>
+    </div>
 
 </div>
 );
