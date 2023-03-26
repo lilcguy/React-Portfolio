@@ -15,8 +15,27 @@ function Forms() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [focusValue, setFocusValue] = useState(false);
     //state for error message, because whether or not the validation comes back true or false, display an error message.
         //give each form separate error message...
+
+
+
+        
+        //onBlur is also an attribute!!
+    /*
+        const nameForm = document.getElementById('name');
+
+        //console.log(nameForm);
+
+        nameForm.addEventListener("blur", (event) => {
+            if (event.target.value === '') {
+                setErrorMessage('All fields are required.');
+            }
+        });
+    */
+
+
     function handleInputChange(e) {
         const {target} = e;
         const inputType = target.name;
@@ -37,10 +56,34 @@ function Forms() {
         setMessage(inputValue);
     }
 
-    if (!validateEmail(email)) { //if the email validation fails, i.e. false...
-        setErrorMessage("Email is invalid.")
+        //this check runs with every single input change.
+    if (!validateEmail(email)) { //if the email validation fails, i.e. false... 
+        setErrorMessage("Email is invalid.");
+        console.log("failed email check");
+        return;
+    } else {
+        setErrorMessage('');
+        console.log('email checks out.')
     }
 
+
+        
+    }
+
+    function formSubmissionHandler (e) {
+        e.preventDefault();
+        //default behavior is refresh of page. this prevents that
+
+        if (!validateEmail(email) || !name || !message) { //if the email validation fails, i.e. false... if name and message are empty
+            setErrorMessage("All forms are required; email may be invalid.");
+            return;
+        }
+
+        window.alert("Page is under development. This feature is not complete, but your submission would be successful.");
+        //clear all forms on successful submission; i.e. validations cleared.
+        setName('');
+        setEmail('');
+        setMessage('');
         
     }
 
@@ -52,6 +95,7 @@ function Forms() {
             <h1 className="h1">Contact Me!</h1>
             <div className="forms-parent">
                 <input 
+                id="name"
                 name="name"
                 value={name}
                 onChange={handleInputChange}
@@ -59,6 +103,7 @@ function Forms() {
                 className="form"></input>
 
                 <input 
+                id="email"
                 onChange={handleInputChange}
                 name="email"
                 value={email}
@@ -66,6 +111,7 @@ function Forms() {
                 className="form"></input>
 
                 <input 
+                id="message"
                 onChange={handleInputChange}
                 name="message"
                 value={message}
@@ -77,6 +123,8 @@ function Forms() {
                     className="error">{errorMessage}
                     </h3>
                 </div>
+
+                <button onClick={formSubmissionHandler}>Submit</button>
                     
             </div>
             <h2 className="h1">999-999-9999</h2>
