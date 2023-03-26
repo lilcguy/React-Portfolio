@@ -8,11 +8,12 @@ import '../styles/Contact.css';
 export default function Contact() {
     return (
         <div className=""> 
+        <h6>*This page is under development and the forms are not functional at this moment.</h6>
             <h1 className="h1">Contact Me!</h1>
             <div className="forms-parent">
-                <textarea className="form">Your Name</textarea>
-                <textarea className="form">Your Email</textarea>
-                <textarea className="msg-form">Message</textarea>
+                <input placeholder="Your Name" className="form"></input>
+                <input placeholder="Your Email" className="form"></input>
+                <input placeholder="Message" className="msg-form"></input>
             </div>
             <h2 className="h1">999-999-9999</h2>
             <h2 className="h1">thecbradshaw89@gmail.com</h2>
