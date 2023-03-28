@@ -19,9 +19,9 @@ return (
                 <h1>{item.title}</h1>
                 <img className="img" src={item.image}></img>
                 <div>
-                    <a className="" href={item.deployLink}>Deployed Application</a>
+                    <a className="" href={item.deployLink}>Deployed Application/Walkthrough</a>
                     <div>
-                        <a className="" href={item.repoLink}>GitHub</a>
+                        <a className="" href={item.repoLink}>GitHub Repository</a>
                     </div>
                 </div>
             </div>

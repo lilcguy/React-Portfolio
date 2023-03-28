@@ -12,7 +12,7 @@ export default function About() {
         <img className='stuff 'src='avatar.jpg'></img>
         <p>
           Hello! My name is Colin. 
-          What started as a shot in the dark based on interests from when I was younger has turned into a fascination with technology and programming.
+          What started as a shot in the dark based on interests from when I was younger has turned into a fascination, appreciation, and respect for technology and programming.
           I enjoy the satisfaction of solving problems and I am seeking opportunities to start my career.
         </p>
     </div>
