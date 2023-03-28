@@ -35,6 +35,18 @@ const projects = [
         deployLink: "https://lilcguy.github.io/5-Day-Weather-Forecast/",
         repoLink: "https://github.com/lilcguy"
     },
+    {
+        title: "placeholder4",
+        image: "placeholder.jpg",
+        deployLink: "https://lilcguy.github.io/5-Day-Weather-Forecast/",
+        repoLink: "https://github.com/lilcguy"
+    },
+    {
+        title: "placeholder4",
+        image: "placeholder.jpg",
+        deployLink: "https://lilcguy.github.io/5-Day-Weather-Forecast/",
+        repoLink: "https://github.com/lilcguy"
+    },
 
 
 ]

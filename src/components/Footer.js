@@ -17,10 +17,10 @@ export default function Footer() { //exporting and declaration/initialization of
             href="https://github.com/lilcguy">GitHub</a> {/* maybe make this an icon for style points?*/}
             <a 
             className="nav-link"
-            href="">LinkedIn</a>
+            href="https://linkedin.com/in/colin-bradshaw-a81167270">LinkedIn</a>
             <a 
             className="nav-link"
-            href="">Third platform</a> {/*ask a question about this. i dont have a twitter or stackOverflow. */}
+            href="https://twitter.com/ColinBrads78373">Twitter</a> {/*ask a question about this. i dont have a twitter or stackOverflow. */}
         </footer>
 
         </div>

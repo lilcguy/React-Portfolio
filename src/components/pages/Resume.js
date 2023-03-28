@@ -26,7 +26,7 @@ export default function Resume() {
             </div>
                 <div className="resume">
                     <h1>My Resume</h1>
-                    <a href="../../../Assets\20-react-homework-demo-01.gif" download="testFilename">Download</a>
+                    <a href="https://docs.google.com/document/d/1macDBYxrgC9BnADpIL7Fu0w17xg_uBXt/edit?usp=sharing&ouid=104670659854968324738&rtpof=true&sd=true">Link</a>
 
                 </div>
         </div>

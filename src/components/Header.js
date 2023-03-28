@@ -12,7 +12,9 @@ function Header() {
     return (
     <div className="header">
         <header>
-            <h1>Colin Bradshaw</h1>
+            <h1>
+                Colin Bradshaw's Portfolio
+            </h1>
             
         </header>
     </div>
