@@ -17,7 +17,7 @@ return (
         {props.projects.map(item => (
             <div className="card-me">
                 <h1>{item.title}</h1>
-                <img className="img" src={item.image}></img>
+                <img className="img" src={item.image} alt={item.alt}></img>
                 <div>
                     <a className="" href={item.deployLink}>Deployed Application/Walkthrough</a>
                     <div>
